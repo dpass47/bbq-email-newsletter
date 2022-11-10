@@ -1,0 +1,198 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 1rem;
+	margin: 0;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #404040;
+	line-height: 1.6;
+}
+
+/* typography */
+
+.landing-section {
+	text-align: center;
+	background-image: url(../images/ribs.jpg);
+	background-color: #404040;
+	background-blend-mode: multiply;
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+}
+
+h1 {
+	font-size: 2.25rem;
+	font-weight: 400;
+	margin-bottom: 0;
+}
+
+.small-text {
+	font-size: 0.625rem;
+}
+
+.text-block {
+	display: block;
+}
+
+.landing-section p {
+	letter-spacing: 2px;
+	font-weight: 900;
+	margin-top: 0;
+	padding-top: 5px;
+}
+
+h2 {
+	font-size: 1.3125rem;
+	margin-top: 0;
+}
+
+strong {
+	font-weight: 900;
+	display: block;
+}
+
+.accent-text {
+	color: #f18119;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+.form-section {
+	text-align: center;
+}
+
+.register-btn {
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 0.625rem;
+	letter-spacing: 2px;
+	color: #fff;
+	border: none;
+	background-color: #f18119;
+}
+
+.top-text {
+	border-top: 5px solid #f18119;
+	border-image: linear-gradient(90deg, #ff713b, #ffa51d) 1;
+}
+
+.name-input {
+	text-transform: capitalize;
+	color: #f18119;
+}
+/* layout */
+
+.flex {
+	display: flex;
+	flex-direction: column;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 95%;
+	margin: 0 auto;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 auto;
+	width: 80%;
+}
+
+form input,
+form button {
+	margin-top: 1em;
+	text-align: center;
+	color: #404040;
+	border-radius: 5px;
+	font-weight: 400;
+}
+
+input {
+	border: 1px solid #404040;
+	width: 99%;
+	height: 50px;
+	border: #404040 1px solid;
+	outline: none;
+	transition: all 500ms;
+}
+
+button {
+	width: 100%;
+	height: 50px;
+	background-image: linear-gradient(90deg, #ff713b 0%, #ffa51d 100%);
+	cursor: pointer;
+	border: 0;
+	transition: all 500ms;
+}
+
+button:hover,
+button:focus {
+	color: black;
+	transform: scale(1.1);
+}
+
+button:active {
+	background-image: linear-gradient(90deg, #ffa51d 0%, #ff713b 100%);
+}
+
+input:focus {
+	transform: scale(1.1);
+}
+
+/* media */
+
+@media (min-width: 900px) {
+	.flex {
+		flex-direction: row;
+		height: 100%;
+	}
+
+	.container {
+		min-height: 100vh;
+	}
+
+	.form-section .container {
+		display: flex;
+		justify-content: center;
+	}
+
+	.form-section {
+		width: 40vw;
+		height: 100%;
+	}
+
+	.landing-section {
+		width: 60vw;
+	}
+
+	input {
+		height: 50px;
+	}
+
+	button {
+		height: 50px;
+	}
+
+	h1 {
+		font-size: 3.5rem;
+	}
+
+	h2 {
+		font-size: 1.75rem;
+	}
+
+	body {
+		font-size: 1.125rem;
+	}
+
+	.form-section .small-text {
+		letter-spacing: 1px;
+	}
+}
